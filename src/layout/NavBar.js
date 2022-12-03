@@ -6,6 +6,7 @@ import { UserContext } from "../context/UserContext";
 
 import { FaGithub } from "react-icons/fa";
 
+// Navbar Component
 const NavBar = () => {
   const context = useContext(UserContext);
   return (
@@ -15,6 +16,7 @@ const NavBar = () => {
     >
       <div className="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 container xl:max-w-7xl mx-auto px-4 lg:px-10">
         <div>
+          {/* conditional rendering of text with logo */}
           {!context.user ? (
             <p className="inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-rose-600 hover:text-rose-400">
               <FaGithub />
@@ -47,6 +49,7 @@ const NavBar = () => {
             </a>
           </nav>
           <div className="flex items-center justify-center space-x-2">
+            {/* Conditional rendering of login & logout btn */}
             {context.user ? (
               <Link
                 to="/"
