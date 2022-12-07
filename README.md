@@ -4,13 +4,13 @@
 
 ## Description
 
-[**Github User Finder**]() is built with React, Firebase, React-router, Tailwind css and other tools to search users and view their profiles on Github via Github API authenticated with Firebase authentication.
+[**Github User Finder**](https://github-fireauth.netlify.app/) is built with React, Firebase, React-router, Tailwind css and other tools to search users and view their profiles on Github via Github API authenticated with Firebase authentication.
 
 ## Links for Project
 
-- ### 📌 [LIVE Project Link]()
+- ### 📌 [LIVE Project Link](https://github-fireauth.netlify.app/)
 
-- ### 📌 [YouTube Link]()
+- ### 📌 [YouTube Link](https://youtu.be/gpO7Ku74Bb8)
 
 ## Tech Stack Used
 
@@ -44,11 +44,25 @@
 
 ## Project Screen Shot(s)
 
-![capture1]()
+### Landing Page
 
-![capture2]()
+![Landing Page](./src/screencaptures/dbd0d0b3-88eb-47cf-ad79-3dbb48d6fa29.png)
 
-![mcapture]()
+### SignUp Page
+
+![SignUp Page](./src/screencaptures/4b546416-87b3-4ca2-87ef-35c6f05261d3.png)
+
+### Login Page
+
+![Login Page](./src/screencaptures/f6b15f48-57dd-4553-a8b4-70ac6ebcfa9e.png)
+
+### Home Page
+
+![Home Page](./src/screencaptures/efe8f0e0-b62a-4cf5-b4ae-3bc2689db0b8.png)
+
+### Search Result Home Page
+
+![Search Result Home Page](./src/screencaptures/8bb24961-93c7-467c-bc4d-5fa1c970b0d0.png)
 
 ## Checkout Portfolio & Other Projects
 
