@@ -88,7 +88,7 @@ const Signup = () => {
   }
   return (
     <>
-      <div className="flex w-full max-w-sm mx-auto pt-2 overflow-hidden bg-white rounded-xl shadow-xl dark:bg-gray-800 lg:max-w-4xl">
+      <div className="flex w-full max-w-sm mx-auto pt-2 overflow-hidden bg-white rounded-xl shadow-xl lg:max-w-4xl">
         <div
           className="hidden bg-cover bg-center rounded-tl-xl lg:block lg:w-1/2"
           style={{
