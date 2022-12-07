@@ -40,6 +40,8 @@
 
 - Framer Motion
 
+- Tailkit Components
+
 ## Project Screen Shot(s)
 
 ![capture1]()
