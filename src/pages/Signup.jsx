@@ -98,13 +98,13 @@ const Signup = () => {
         ></div>
 
         <div className="w-full px-6 py-6 md:px-8 lg:w-1/2">
-          <p className="text-xl text-center text-gray-600 dark:text-gray-200">
+          <p className="text-xl text-center text-gray-700 font-semibold">
             Sign up here to find your fellow programmers.
           </p>
 
           <div>
             <a
-              className="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600 cursor-pointer"
+              className="flex items-center justify-center mt-4 text-black transition-colors duration-300 transform border border-gray-400 rounded-lg hover:bg-gray-50 cursor-pointer opacity-70 hover:opacity-50"
               rel="noopener noreferrer"
               onClick={() => {
                 toast.info("Feature not available!", {
@@ -122,32 +122,32 @@ const Signup = () => {
               <div className="pl-4 py-2">
                 <FcGoogle size={"1.5rem"} />
               </div>
-              <span className="w-5/6 pr-8 py-3 font-bold text-center">
+              <span className="w-5/6 pr-8 py-3 font-semibold text-center">
                 Sign up with Google
               </span>
             </a>
           </div>
 
           <div className="flex items-center justify-between mt-4">
-            <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
+            <span className="w-1/5 border-b border-gray-500 lg:w-1/4"></span>
 
             <p className="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">
               or signup with email
             </p>
 
-            <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
+            <span className="w-1/5 border-b border-gray-500 lg:w-1/4"></span>
           </div>
 
           <div className="mt-4">
             <label
-              className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+              className="block mb-2 text-sm text-gray-800 font-semibold"
               htmlFor="LoggingEmailAddress"
             >
               Email Address
             </label>
             <input
               id="LoggingEmailAddress"
-              className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+              className="block w-full px-4 py-2 text-gray-800 bg-white border border-gray-400 rounded-lg focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -157,7 +157,7 @@ const Signup = () => {
           <div className="mt-4">
             <div className="flex justify-between">
               <label
-                className="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-200"
+                className="block mb-2 text-sm font-semibold text-gray-800"
                 htmlFor="loggingPassword"
               >
                 Password
@@ -166,7 +166,7 @@ const Signup = () => {
 
             <input
               id="loggingPassword"
-              className="block w-full px-4 py-2 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-300"
+              className="block w-full px-4 py-2 text-gray-800 bg-white border border-gray-400 rounded-lg focus:border-blue-400 focus:ring-opacity-40  focus:outline-none focus:ring focus:ring-blue-300"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -183,17 +183,17 @@ const Signup = () => {
           </div>
 
           <div className="flex items-center justify-between mt-4">
-            <span className="w-1/5 border-b dark:border-gray-600 md:w-1/8"></span>
+            <span className="w-1/5 border-b border-gray-500 md:w-1/8"></span>
 
             <Link
               to="/signin"
-              className="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline"
+              className="text-xs text-gray-500 uppercase hover:underline"
             >
               have an account{" "}
               <p className="text-blue-500 inline-block uppercase">Login here</p>
             </Link>
 
-            <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
+            <span className="w-1/5 border-b border-gray-500 md:w-1/4"></span>
           </div>
         </div>
       </div>
