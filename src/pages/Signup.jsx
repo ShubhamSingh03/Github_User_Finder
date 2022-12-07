@@ -12,6 +12,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
 
   const handleSignUp = () => {
+    // firebase auth
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -76,6 +77,7 @@ const Signup = () => {
       });
   };
 
+  // onClick of SignUp btn
   const handleSubmit = (e) => {
     e.preventDefault();
     handleSignUp();

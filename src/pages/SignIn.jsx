@@ -14,6 +14,7 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
 
   const handleSignUp = () => {
+    // firebase auth
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
@@ -31,7 +32,6 @@ const SignIn = () => {
         });
       })
       .catch((error) => {
-        console.log(error.code.toString());
         switch (error.code) {
           case "auth/user-not-found": {
             toast.error("Invalid Email or password !", {
@@ -87,6 +87,7 @@ const SignIn = () => {
       });
   };
 
+  // onClick of Login btn
   const handleSubmit = (e) => {
     e.preventDefault();
     handleSignUp();
@@ -103,6 +104,7 @@ const SignIn = () => {
   }
   return (
     <>
+      {/* signIn component here */}
       <div className="flex w-full max-w-sm mx-auto pt-4 overflow-hidden bg-white rounded-xl shadow-xl dark:bg-gray-800 lg:max-w-4xl">
         <div
           className="hidden bg-cover bg-center bg-no-repeat rounded-tl-xl lg:block lg:w-1/2"

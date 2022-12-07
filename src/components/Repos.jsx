@@ -3,6 +3,7 @@ import Axios from "axios";
 import { VscRepoForked } from "react-icons/vsc";
 import { FaRegStar } from "react-icons/fa";
 
+// shows repos list on btnClick
 const Repos = ({ repos_url }) => {
   const [repos, setRepos] = useState([]);
 
@@ -17,6 +18,7 @@ const Repos = ({ repos_url }) => {
 
   return (
     <>
+      {/* repo list section */}
       <section className="mt-12 max-w-screen-lg mx-auto px-4">
         <h1 className="font-bold text-xl lg:pl-32 pb-4 opacity-80 hover:opacity-60">
           Repositries as in: [Alphabatical order]

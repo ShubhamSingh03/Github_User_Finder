@@ -6,6 +6,7 @@ import { UserContext } from "../context/UserContext";
 import { toast } from "react-toastify";
 import { HiOutlineSearch } from "react-icons/hi";
 
+// homePage with search input component
 const Home = () => {
   const context = useContext(UserContext);
   const [query, setQuery] = useState("");
@@ -29,7 +30,7 @@ const Home = () => {
     }
   };
 
-  //PUt Anypage behind login
+  // putting pages behind login page
   if (!context.user?.uid) {
     return <Navigate to="/" />;
   }

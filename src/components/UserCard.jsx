@@ -2,6 +2,7 @@ import { useState } from "react";
 import { SlUserFollow } from "react-icons/sl";
 import Repos from "./Repos";
 
+// Card for every searched user
 const UserCard = ({ user }) => {
   const [isShown, setIsShown] = useState(false);
   const handleClick = (event) => {
@@ -9,6 +10,7 @@ const UserCard = ({ user }) => {
   };
   return (
     <>
+      {/* userCard */}
       <div className="max-w-3xl mx-auto z-10">
         <div className="flex flex-col">
           <div className="bg-white border border-white shadow-lg  rounded-3xl p-4 m-4">

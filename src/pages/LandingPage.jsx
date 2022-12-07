@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// landing page before login
 const LandingPage = () => {
   return (
     <>
