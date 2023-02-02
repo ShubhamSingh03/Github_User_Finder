@@ -8,6 +8,8 @@ import { FcGoogle } from "react-icons/fc";
 const Signup = () => {
   const context = useContext(UserContext);
 
+  const provider = new firebase.auth.GoogleAuthProvider();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -77,6 +79,38 @@ const Signup = () => {
       });
   };
 
+  const handleGoogleSignUp = () => {
+    firebase
+      .auth()
+      .signInWithPopup(provider)
+      .then((res) => {
+        console.log(res.user);
+        context.setUser({ email: res.user.email, uid: res.user.uid });
+        toast.success("Account Created Successfully !", {
+          position: "top-right",
+          autoClose: 1200,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      })
+      .catch(() => {
+        toast.error("Something went wrong!", {
+          position: "top-right",
+          autoClose: 1200,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      });
+  };
+
   // onClick of SignUp btn
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -106,18 +140,7 @@ const Signup = () => {
             <a
               className="flex items-center justify-center mt-4 text-black transition-colors duration-300 transform border border-gray-400 rounded-lg hover:bg-gray-50 cursor-pointer opacity-70 hover:opacity-50"
               rel="noopener noreferrer"
-              onClick={() => {
-                toast.info("Feature not available!", {
-                  position: "top-right",
-                  autoClose: 1200,
-                  hideProgressBar: true,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                  theme: "dark",
-                });
-              }}
+              onClick={handleGoogleSignUp}
             >
               <div className="pl-4 py-2">
                 <FcGoogle size={"1.5rem"} />

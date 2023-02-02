@@ -18,7 +18,7 @@
 
 ## Key features:
 
-- User can signup or signin with email and password.
+- Google Authentication and email/password auth.
 
 - User can search other fellow programmers and view their public info and repos
 
