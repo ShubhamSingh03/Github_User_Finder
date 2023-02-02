@@ -94,7 +94,6 @@ const SignIn = () => {
       .auth()
       .signInWithPopup(provider)
       .then((res) => {
-        console.log(res.user);
         context.setUser({ email: res.user.email, uid: res.user.uid });
         toast.success("Login Successfull !", {
           position: "top-right",
